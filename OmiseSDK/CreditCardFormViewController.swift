@@ -187,7 +187,7 @@ public class CreditCardFormViewController: UIViewController, PaymentChooserUI, P
 
     /// A boolean flag that enables/disables Card.IO integration.
     @available(*, unavailable, message: "Built in support for Card.ios was removed. You can implement it in your app and call the setCreditCardInformation(number:name:expiration:) method")
-    @objc public var cardIOEnabled = true
+    @objc public var cardIOEnabled: Bool { return true }
 
     /// Factory method for creating CreditCardFormController with given public key.
     /// - parameter publicKey: Omise public key.
